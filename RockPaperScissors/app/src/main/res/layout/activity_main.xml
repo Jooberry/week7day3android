@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.codeclan.com.rockpaperscissors.MainActivity">
+
+
+    <Button
+        android:id="@+id/paper_button"
+        android:onClick="onPaperButtonClicked"
+        android:text="PAPER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/rock_button"
+        android:layout_alignStart="@+id/rock_button" />
+
+    <Button
+        android:id="@+id/scissor_button"
+        android:onClick="onScissorButtonClicked"
+        android:text="SCISSORS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/paper_button"
+        android:layout_alignLeft="@+id/paper_button"
+        android:layout_alignStart="@+id/paper_button" />
+
+    <Button
+        android:id="@+id/rock_button"
+        android:onClick="onRockButtonClicked"
+        android:text="ROCK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/paper_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp" />
+
+    <Button
+        android:id="@+id/lizard_button"
+        android:onClick="onLizardButtonClicked"
+        android:text="LIZARD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/rock_button"
+        android:layout_alignLeft="@+id/rock_button"
+        android:layout_alignStart="@+id/rock_button" />
+
+    <Button
+        android:id="@+id/spock_button"
+        android:onClick="onSpockButtonClicked"
+        android:text="SPOCK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/scissor_button"
+        android:layout_alignLeft="@+id/scissor_button"
+        android:layout_alignStart="@+id/scissor_button" />
+
+</RelativeLayout>
